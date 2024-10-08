@@ -62,10 +62,10 @@
       yum_repository:
         name: docker
         description: Docker CE Stable - $basearch
-        baseurl: https://download.docker.com/linux/rhel/8/$basearch/stable
+        baseurl: https://download.docker.com/linux/centos/$releasever/$basearch/stable
         gpgcheck: yes
         enabled: yes
-        gpgkey: https://download.docker.com/linux/rhel/gpg
+        gpgkey: https://download.docker.com/linux/centos/gpg
 
     - name: install Containerd
       yum:
