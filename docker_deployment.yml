@@ -1,6 +1,6 @@
 ---
 - name: Deploy Docker image
-  hosts: localhost
+  hosts: all
   tasks:
       - name: Pull Docker Image
         docker_image:
